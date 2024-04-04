@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Favorites</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>
+                <img src="./assets/logo.svg" alt="GitFav-logo">
+            </h1>
+            <div class="input-wrapper">
+                <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button class="favorite-btn">
+                    <img class="favorite-svg" src="./assets/star.svg" alt="star-img">
+                    Favoritar
+                </button>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Repositories</th>
+                    <th>Followers</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/maykbrito.png" alt="Imagem do Usuário">
+                        <a href="https://github.com/maykbrito" target="_blank">
+                            <p>Mayk Brito</p>
+                            <span>maykbrito</span>
+                        </a>
+                    </td>
+                    <td class="repositories">121</td>
+                    <td class="followers">15317</td>
+                    <td class="remove-btn">
+                        <button>&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
