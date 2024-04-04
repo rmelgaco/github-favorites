@@ -107,9 +107,8 @@ header {
     background-color: var(--color-favorite-btn-bg-hover);
     color: var(--color-favorite-btn-font-hover);
 }
-
-.favorite-svg {
-    fill: black !important;
+.input-wrapper button:hover .favorite-svg path{
+    fill: var(--color-favorite-btn-font-hover);
 }
 
 .user img {
