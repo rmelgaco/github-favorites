@@ -93,9 +93,10 @@ header {
     font-weight: 700;
     text-transform: uppercase;
 
-    
     border: none;
     border-radius: 0.8rem;
+
+    cursor: pointer;
 }
 
 .input-wrapper button img{
@@ -111,9 +112,84 @@ header {
     fill: var(--color-favorite-btn-font-hover);
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    box-shadow: 0 2rem 2rem -2rem rgba(255, 255, 255, 0.3);
+}
+
+table * {
+    font-size: 2rem;
+    color: var(--color-font-primary);
+}
+
+table th{
+    background-color: var(--color-table-header-bg);
+    text-align: left;
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+table th:first-child {
+    border-top-left-radius: 0.8rem;
+}
+
+table th:last-child{
+    border-top-right-radius: 0.8rem;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 0.8rem;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 0.8rem;
+}
+
+table td {
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+.user {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+table tr:nth-child(even) td{
+    background-color: var(--color-table-row-even-bg);
+}
+
+table tr:nth-child(odd) td{
+    background-color: var(--color-table-row-odd-bg);
+}
+
 .user img {
     width: 5.6rem;
     height: 5.6rem;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
+}
+
+.user a {
+    text-decoration: none;
+}
+
+.user a p{
+    font-weight: bold;
+}
+
+.remove-btn button{
+    border: none;
+    background-color: transparent;
+    color: red;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+}
+
+.remove-btn button:hover{
+    transform: scale(1.2);
 }
