@@ -12,6 +12,7 @@
     --color-font-primary: hsl(var(--hue), 9%, 89%);
 
     --color-input-bg: hsl(var(--hue), 65%, 7%);
+    --color-input-text: hsl(var(--hue), 0%, 100%);
     --color-favorite-btn-bg: hsl(var(--hue), 91%, 25%);
     --color-favorite-btn-font: hsl(var(--hue), 0%, 100%);
     --color-favorite-btn-bg-hover: var(--color-favorite-btn-font);
@@ -68,6 +69,7 @@ header {
     height: 4.8rem;
    
     background-color: var(--color-input-bg);
+    color: var(--color-input-text);
    
     border: none;
     border-radius: 0.8rem;
@@ -116,7 +118,7 @@ table {
     width: 100%;
     border-collapse: collapse;
 
-    box-shadow: 0 2rem 2rem -2rem rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2rem 2rem -2rem rgba(61, 61, 61, 0.5);
 }
 
 table * {
